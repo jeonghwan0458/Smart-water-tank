@@ -151,5 +151,8 @@ void DateTime(const RtcDateTime& dt)
       digitalWrite(LIGHT, HIGH);
       WeekTime++;
     }
+    if(dt.Hour() == 20 && dt.Minute() == 30 && dt.Second() == 0){
+      digitalWrite(LIGHT, LOW);
+    }
     
 }
